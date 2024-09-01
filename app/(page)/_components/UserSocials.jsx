@@ -1,8 +1,8 @@
 "use client";
 
-import Logo from "@/components/Logo";
-import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
+import Logo from "../../../components/Logo";
+import { Button } from "../../../components/ui/button";
+import { Skeleton } from "../../../components/ui/skeleton";
 import { Facebook, Github, Instagram, Share2, Youtube } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
