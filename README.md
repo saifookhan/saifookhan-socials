@@ -34,7 +34,7 @@ To run this project locally, follow these steps:
 3. Set up MongoDB and configure the connection string in the application.
 4. Create a `.env.local` file
 5. Add mongodb and clerk's environment variables
-7. Start the development server: `npm run dev`
+6. Start the development server: `npm run dev`
 
 ## Usage
 
