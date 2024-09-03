@@ -1,8 +1,9 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/utils/theme-provider";
+import { ThemeProvider } from "../components/utils/theme-provider";
 import NextTopLoader from "nextjs-toploader";
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "../components/ui/toaster";
+import Script from "next/script";
 
 const poppins = Poppins({
   subsets: ["latin"],
