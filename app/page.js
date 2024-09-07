@@ -3,7 +3,14 @@
 import Logo from "../components/Logo";
 import { Button } from "../components/ui/button";
 import { Skeleton } from "../components/ui/skeleton";
-import { Facebook, Github, Instagram, Share2, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  Instagram,
+  Share2,
+  Youtube,
+  Linkedin,
+} from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaHeartCircleCheck } from "react-icons/fa6";
@@ -13,6 +20,7 @@ export default function UserSocials() {
   const [bio, setBio] = useState("");
   const [insta, setInsta] = useState("");
   const [face, setFace] = useState("");
+  const [linkedin, setLinkedin] = useState("");
   const [github, setGithub] = useState("");
   const [youtube, setYoutube] = useState("");
   const [image, setImage] = useState("");
@@ -26,6 +34,7 @@ export default function UserSocials() {
     setName("@saifookhan");
     setBio("Probably the only guy with this name");
     setInsta("https://www.instagram.com/saifooexplores/");
+    setLinkedin("https://www.linkedin.com/in/saifookhan");
     setFace("https://www.facebook.com/saifoo.khan");
     setGithub("https://github.com/saifookhan/");
     setYoutube("https://www.youtube.com/@Desi2Abroad");
@@ -76,13 +85,6 @@ export default function UserSocials() {
         <>
           <div className="grid relative gap-3 grid-cols-1 max-w-[600px]">
             <Link
-              className="w-full transition md:w-[420px] sm:w-[300px] mx-auto h-14 bg-secondary flex items-center justify-center rounded-lg hover:bg-primary hover:text-white hover:scale-95 relative flex space-around"
-              target="_blank"
-              href={youtube}
-            >
-              <Youtube className="absolute left-6 h-5 w-5 " /> yt: @saifookhan
-            </Link>
-            <Link
               className="w-full transition md:w-[420px] sm:w-[300px] mx-auto h-14 bg-secondary flex items-center justify-center rounded-lg hover:bg-primary hover:text-white hover:scale-95 relative"
               target="_blank"
               href={insta}
@@ -96,6 +98,20 @@ export default function UserSocials() {
               href={face}
             >
               <Facebook className="absolute left-6 h-5 w-5" /> fb: @saifookhan
+            </Link>
+            <Link
+              className="w-full transition md:w-[420px] sm:w-[300px] mx-auto h-14 bg-secondary flex items-center justify-center rounded-lg hover:bg-primary hover:text-white hover:scale-95 relative"
+              target="_blank"
+              href={linkedin}
+            >
+              <Linkedin className="absolute left-6 h-5 w-5" /> Saif Imran
+            </Link>
+            <Link
+              className="w-full transition md:w-[420px] sm:w-[300px] mx-auto h-14 bg-secondary flex items-center justify-center rounded-lg hover:bg-primary hover:text-white hover:scale-95 relative flex space-around"
+              target="_blank"
+              href={youtube}
+            >
+              <Youtube className="absolute left-6 h-5 w-5 " /> yt: @saifookhan
             </Link>
             <Link
               className="w-full transition md:w-[420px] sm:w-[300px] mx-auto h-14 bg-secondary flex items-center justify-center rounded-lg hover:bg-primary hover:text-white hover:scale-95 relative"
