@@ -11,18 +11,12 @@ export default function Footer() {
           <p className="text-xs">
             Built by{" "}
             <a
-              href="https://github.com/r2hu1"
+              href="https://github.com/saifookhan"
               className="hover:text-primary hover:underline"
             >
-              r2hu1
+              saifoo
             </a>{" "}
             codebase on{" "}
-            <a
-              className="hover:text-primary hover:underline"
-              href="https://github.com/r2hu1/mysocials"
-            >
-              github
-            </a>
           </p>
         </div>
         <div>

@@ -121,7 +121,7 @@ export default function UserSocials() {
       <div className="mt-32 grid place-content-center text-center -mb-10">
         <Logo />
         <p className="text-xs">
-          Made with ❤️ by <a href="https://github.com/r2hu1">r2hu1</a>
+          Made with ❤️ by <a href="https://github.com/saifookhan">saifoo</a>
         </p>
       </div>
     </div>
